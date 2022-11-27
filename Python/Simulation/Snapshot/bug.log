@@ -1,0 +1,7 @@
+The surface density profile have not check the internal unit in Agama.
+
+The cartesian_map.py has not been implemented for the potential gas component, such as SFR balala
+The cartesian_map.py has not been implemented for the potential gas component, such as SFR balala
+
+In radial_profile.py I am not sure whether the gas component should be treat as disk-like component.
+

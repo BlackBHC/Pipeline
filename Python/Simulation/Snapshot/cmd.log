@@ -1,0 +1,11 @@
+# For hdf5 to txt file:
+python hdf52txt.py -id=$VMGNbody/output_1 -od=$VMGFig -if=snapshot_000 -of=model -ir=$INI
+
+# For cartesian maps of snapshot:
+python cartesian_map.py -id=/home/bhchen/BPX_Populations/Nbody/output -od=/home/bhchen/Fig -if=snapshot_365 -of=cartesian_map -ir=$INI
+
+# For radial profile
+python radial_profile.py -id=$VMGFig -od=$VMGFig -if=model -of=radial_profile -ir=$INI
+
+# For gif images from some figs
+python movie.py -id=/home/bhchen/Fig -od=/home/bhchen/Fig -if=cartesian_map_column_density -of=cartesian_map -ir=$INI

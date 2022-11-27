@@ -1,0 +1,5 @@
+# Create IC:
+python ic.py -id=/home/bhchen/BPX_Populations/IC -od=/home/bhchen/BPX_Populations/IC -if=diskhalo -of=model_-st=Nbody -mt='two component' -ir=$INI/
+
+# Txt to hdf5:
+python txt2hdf5.py -id=/home/bhchen/BPX_Populations/IC -od=/home/bhchen/BPX_Populations/IC -if=model_ -of=diskhalo -mt='two component' -ir=$INI/

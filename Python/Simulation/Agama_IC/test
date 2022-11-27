@@ -1,0 +1,4 @@
+python ic.py -id=$VMGic/input_4/ -od=$VMGic/input_4 -if=diskhalo -of=model_-st=Nbody -mt='two component' -ir=$INI/
+
+# Txt to hdf5:
+python txt2hdf5.py -id=$VMGic/input_4 -od=$VMGic/input_4 -if=model_ -of=diskhalo -mt='two component' -ir=$INI/
