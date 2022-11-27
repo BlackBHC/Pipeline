@@ -22,8 +22,8 @@ i=1000
 for ((i=1000;i<=1400;i++))
 do
 	var=${i:1}
-	indir=$VMG/Nbody/output_2 
-	outdir=$VMG/Fig/
+	indir=$VMG/Nbody/output 
+	outdir=$VMGFig
 	python cartesian_map.py -id=$indir -od=$outdir -if=snapshot_$var -of=cartesian_map_1 -ir=$INI
 	mv $outdir/cartesian_map_1_column_density.${fmt} $outdir/cartesian_map_1_column_density$[$i-1000].${fmt}
 	echo ${i:1}

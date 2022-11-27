@@ -7,15 +7,15 @@
 #PBS -l walltime=2:00:00
 #PBS -q debug
 #PBS -j oe
-#PBS -o /home/bhchen/Pipeline/Python/Simulation/Agama_IC/output.log
+#PBS -o $HOME/Pipeline/Python/Simulation/Agama_IC/output.log
 
 echo running with ${PBS_NP} processes on ${PBS_NUM_NODES} nodes
+source $HOME/.cbh_set/cbh_set.sh
 # run your own program!!!
-echo $PATH 
-#cd /home/bhchen/Pipeline/Python/Simulation/Agama_IC 
-## Create IC:
-#python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=diskhalo -of=model_-st=Nbody -mt='two component' -ir=$INI
-#
-## Txt to hdf5:
-#python txt2hdf5.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=model_ -of=diskhalo -mt='two component' -ir=$INI
+cd $Agama
+# Create IC:
+python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=diskhalo -of=model_ -st=Nbody -mt='two component' -ir=$INI
+
+# Txt to hdf5:
+python txt2hdf5.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=model_ -of=diskhalo -mt='two component' -ir=$INI
 echo Done!
