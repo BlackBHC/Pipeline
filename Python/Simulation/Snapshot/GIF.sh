@@ -19,7 +19,7 @@ cd $Snap
 fmt=jpg
 
 i=1000
-for ((i=1000;i<=1400;i++))
+for ((i=1000;i<=1038;i++))
 do
 	var=${i:1}
 	indir=$VMG/Nbody/output 
@@ -30,7 +30,7 @@ do
 done
 
 # For gif images from some figs
-python movie.py -id=$outdir -od=$outdir -if=cartesian_map_1_column_density -of=cartesian_map_1 -ir=$INI
+#python movie.py -id=$outdir -od=$outdir -if=cartesian_map_1_column_density -of=cartesian_map_1 -ir=$INI
 
 echo Done!
  

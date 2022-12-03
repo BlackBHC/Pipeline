@@ -7,10 +7,11 @@
 #PBS -l walltime=2:00:00
 #PBS -q debug
 #PBS -j oe
-#PBS -o $HOME/Pipeline/Python/Simulation/Agama_IC/output.log
+#PBS -o $HOME/Pipeline/Python/Simulation/Snapshot/output.log
 
 echo running with ${PBS_NP} processes on ${PBS_NUM_NODES} nodes
-source $HOME/.cbh_set/cbh_set.sh
+source /usr/share/Modules/init/bash
+source $HOME/.cbh_set/shell.sh
 cd $Agama
 # Create IC:
 python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=diskhalo -of=model_ -st=Nbody -mt='two component' -ir=$INI
