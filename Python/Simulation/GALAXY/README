@@ -1,0 +1,7 @@
+Binary to h5 scripts:
+1. with possible mpi part
+2. enable logs of initial radius
+
+Rescaling system.
+
+Assembly all scripts into a class.
