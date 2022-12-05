@@ -1,6 +1,6 @@
 Binary to h5 scripts:
 1. with possible mpi part
-2. enable logs of initial radius
+2. enable logs of initial radius in output hdf5 file.
 
 Rescaling system.
 
