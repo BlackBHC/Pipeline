@@ -32,7 +32,7 @@ with open(file, 'rb') as data:
     print("Lenghth of block: ", num[4])
     print("Nominal particle mass: ", particle_mass)
     print("Whether perturber: ", str(whether_perturber))
-    data.seek(22, 0)
+    data.seek(21, 0)
 
     block_test = read_block(data)
 
