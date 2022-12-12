@@ -10,14 +10,14 @@ from astropy import units as u
 from astropy.coordinates import SkyCoord
 import random
 
-file = "run200.pcs100"
+file = "run999.pcs0"
 
 
 raw = np.fromfile(file, dtype=np.float32, count=-1)
 raw = raw[21:]
 
 i = 0
-n = 1e5 / 5e3
+n = (1e5+1e6) / 5e3
 index = 0
 while(i<n):
     if i==0:
@@ -27,4 +27,4 @@ while(i<n):
     i += 1
 
 print(len(data))
-np.savetxt("final.tmp", data)
+np.savetxt("initial.tmp", data)
