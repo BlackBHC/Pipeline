@@ -27,4 +27,4 @@ while(i<n):
     i += 1
 
 print(len(data))
-np.savetxt("initial.tmp", data)
+np.savetxt("final.tmp", data)
