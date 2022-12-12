@@ -17,7 +17,7 @@ raw = np.fromfile(file, dtype=np.float32, count=-1)
 raw = raw[21:]
 
 i = 0
-n = (1e5+1e6) / 5e3
+n = (1e5 + 1e6) / 5e3
 index = 0
 while(i<n):
     if i==0:
