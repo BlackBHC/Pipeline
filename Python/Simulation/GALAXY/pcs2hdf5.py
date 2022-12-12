@@ -10,7 +10,7 @@ from astropy import units as u
 from astropy.coordinates import SkyCoord
 import random
 
-file = "run200.pcs0"
+file = "run200.pcs100"
 
 
 raw = np.fromfile(file, dtype=np.float32, count=-1)
@@ -27,4 +27,4 @@ while(i<n):
     i += 1
 
 print(len(data))
-np.savetxt("initial.tmp", data)
+np.savetxt("final.tmp", data)
