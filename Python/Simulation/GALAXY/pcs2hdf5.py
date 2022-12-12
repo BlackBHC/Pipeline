@@ -14,4 +14,17 @@ file = "run200.pcs0"
 
 
 raw = np.fromfile(file, dtype=np.float32, count=-1)
+raw = raw[21:]
 
+i = 0
+n = 1e5 / 5e3
+index = 0
+while(i<n):
+    if i==0:
+        data = np.array(raw[index+1:index+1+5000*6]).reshape(5000,6)
+    else:
+        data = np.row_stack((data, np.array(raw[index+1:index+1+5000*6]).reshape(5000,6)))
+    i += 1
+
+print(len(data))
+np.savetxt("initial.tmp", data)
