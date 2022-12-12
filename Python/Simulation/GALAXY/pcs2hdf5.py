@@ -24,6 +24,7 @@ while(i<n):
         data = np.array(raw[index+1:index+1+5000*6]).reshape(5000,6)
     else:
         data = np.row_stack((data, np.array(raw[index+1:index+1+5000*6]).reshape(5000,6)))
+    index += 2+5000*6
     i += 1
 
 print(len(data))
