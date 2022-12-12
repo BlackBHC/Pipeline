@@ -14,7 +14,7 @@ source /usr/share/Modules/init/bash
 source $HOME/.cbh_set/shell.sh
 cd $Agama
 # Create IC:
-python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=diskhalo -of=model_ -st=Nbody -mt='two component' -ir=$INI
+python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=Sandeeps -of=model_ -st=Nbody -mt='two component' -ir=$INI
 
 # Txt to hdf5:
 python txt2hdf5.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=model_ -of=diskhalo -mt='two component' -ir=$INI

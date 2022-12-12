@@ -82,3 +82,89 @@ Output text file:model* in directory:/home/bhchen/FeGradient/IC/Fig/
 [1;33m**** Plotting RC...[0m
 [1;33m**** Plotting Toomre parameter profile...[0m
 Done!
+running with 1 processes on 1 nodes
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Computing density for component 0...done
+Computing density for component 1...done
+Updating potential...done
+Updating action finder...done
+Information of iteration init:
+Disk  total mass=6.34097, rho(R=2,z=0)=0.047039, rho(R=2,z=0.25)=0.0405331
+Halo  total mass=57.42, rho(R=2,z=0)=0.0150534, rho(R=2,z=0.25)=0.0148945
+[1;33m**** STARTING ITERATIVE MODELLING ****[0m
+Masses (computed from DF): 
+MDisk=6.344139926886665
+MHalo=57.49882929944855
+[1;37mStarting iteration #1[0m
+Information of iteration iter1:
+Disk  total mass=5.13023, rho(R=2,z=0)=0.0488074, rho(R=2,z=0.25)=0.0415056
+Halo  total mass=62.5801, rho(R=2,z=0)=0.0169356, rho(R=2,z=0.25)=0.0165719
+[1;37mStarting iteration #2[0m
+Information of iteration iter2:
+Disk  total mass=5.11573, rho(R=2,z=0)=0.0484125, rho(R=2,z=0.25)=0.040865
+Halo  total mass=62.3431, rho(R=2,z=0)=0.0167835, rho(R=2,z=0.25)=0.0163855
+[1;37mStarting iteration #3[0m
+Information of iteration iter3:
+Disk  total mass=5.09993, rho(R=2,z=0)=0.0474579, rho(R=2,z=0.25)=0.0400586
+Halo  total mass=62.3509, rho(R=2,z=0)=0.0165418, rho(R=2,z=0.25)=0.016146
+[1;37mStarting iteration #4[0m
+Information of iteration iter4:
+Disk  total mass=5.08809, rho(R=2,z=0)=0.0467025, rho(R=2,z=0.25)=0.0393036
+Halo  total mass=62.3473, rho(R=2,z=0)=0.0163606, rho(R=2,z=0.25)=0.0159707
+[1;37mStarting iteration #5[0m
+Information of iteration iter5:
+Disk  total mass=5.08122, rho(R=2,z=0)=0.0461924, rho(R=2,z=0.25)=0.039145
+Halo  total mass=62.359, rho(R=2,z=0)=0.0162672, rho(R=2,z=0.25)=0.0158808
+[1;33mCreating an N-body representation of the model[0m
+Sampling Disk DF
+Sampling Halo DF
+Recommended value for the softening length of Disk particles: 0.02533413257871976 kpc.
+Recommended value for the softening length of Halo particles: 0.08543444371863361 kpc.
+Input INI file:Sandeeps.ini in directory:/home/bhchen/FeGradient/IC/test_ic/
+Output txt file:model_* in directory:/home/bhchen/FeGradient/IC/test_ic/
+Read in the txt file of different components...
+Create the hdf5 file 'diskhalo.hdf5' at /home/bhchen/FeGradient/IC/test_ic/...
+Create the Header...
+Create the different PartType...
+Finish the transformation!
+Input text file:model_* in directory:/home/bhchen/FeGradient/IC/test_ic/
+Output hdf5 file:diskhalo.hdf5 in directory:/home/bhchen/FeGradient/IC/test_ic/
+KeysView(<configparser.ConfigParser object at 0x2b54d2b5d700>)
+[1;33m**** WILL RECENTER THE SYSTEM FOR EACH COMPONENT![0m
+[1;33m**** READING IN THE SNAPSHOT diskhalo.hdf5[0m
+[1;33m**** READING IN DIFFERENT COMPONENTS IN THE SNAPSHOT[0m
+CoMs for each component in the model:
+ [array([ 0.01429264, -0.00845217,  0.00038402]), array([-0.0089323 , -0.13434153, -0.12221941])]
+[1;33m**** Tansforming the Disk component ...[0m
+[1;33m**** Tansforming the Halo component ...[0m
+[1;33m**** JOB HAS BEEN FINISHED![0m
+Input hdf5 file:diskhalo.hdf5 in directory:/home/bhchen/FeGradient/IC/test_ic/
+Output text file:model* in directory:/home/bhchen/FeGradient/IC/Fig/
+/home/bhchen/Pipeline/Python/Simulation/Snapshot/radial_profile.py:138: RuntimeWarning: invalid value encountered in sqrt
+  ax.plot(r, np.sqrt(-r*pot.force(points)[:,0]), color=curve_colors[i], linestyle=curve_types[0], label=components[i])
+[1;33m**** Reading in the Disk component...[0m
+[1;33m**** Reading in the Halo component...[0m
+[1;33m**** Plotting RC...[0m
+[1;33m**** Plotting Toomre parameter profile...[0m
+Done!
