@@ -29,7 +29,7 @@ do
 done
 
 # For gif images from some figs
-#python movie.py -id=$outdir -od=$outdir -if=cartesian_map_1_column_density -of=cartesian_map_1 -ir=$INI
+python movie.py -id=$outdir -od=$outdir -if=cartesian_map_1_column_density -of=cartesian_map_1 -ir=$INI
 
 echo Done!
  
