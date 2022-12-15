@@ -19,7 +19,7 @@ cd $Snap
 fmt=jpg
 
 i=1000
-for ((i=1000;i<=1038;i++))
+for ((i=1000;i<=1400;i++))
 do
 	var=${i:1}
 	indir=$VMG/Nbody/output 

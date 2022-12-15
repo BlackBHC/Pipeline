@@ -10,8 +10,7 @@
 #PBS -o $HOME/Pipeline/Python/Simulation/Snapshot/output.log
 
 echo running with ${PBS_NP} processes on ${PBS_NUM_NODES} nodes
-source /usr/share/Modules/init/bash
-source $HOME/.cbh_set/shell.sh
+source $HOME/configure/shell.sh
 cd $Agama
 # Create IC:
 python ic.py -id=$VMGIC/test_ic -od=$VMGIC/test_ic -if=Sandeeps -of=model_ -st=Nbody -mt='two component' -ir=$INI
