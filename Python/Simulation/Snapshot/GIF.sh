@@ -9,9 +9,8 @@
 #PBS -j oe
 #PBS -o /home/bhchen/FeGradient/Fig/gif.txt
  
-source /usr/share/Modules/init/bash
 echo running with ${PBS_NP} processes on ${PBS_NUM_NODES} nodes
-source /home/bhchen/.cbh_set/cbh_set.sh
+source /home/bhchen/configure/shell.sh
 # run your own program!!!
 
 cd $Snap
